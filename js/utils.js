@@ -311,3 +311,15 @@
 
   window.btf = { ...window.btf, ...btfFn }
 })()
+
+  // 获取页面的实际高度
+  function sendHeightToParent() {
+    const height = document.documentElement.scrollHeight; // 或 document.body.scrollHeight
+    window.parent.postMessage(height, '*'); // 发送高度信息到父页面
+  }
+
+  // 页面加载完成后发送高度
+  window.onload = sendHeightToParent;
+
+  // 如果页面高度可能动态变化，可以定期发送高度
+  window.addEventListener('resize', sendHeightToParent);
