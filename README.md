@@ -1,7 +1,7 @@
 👋 Hi, I’m **Yangzi**  
 🎓 Graduate Student, Jiangnan University  
 🤝 Co-trained at the Institute of Computing Technology, CAS  
-🏢 Engineer @ Beijing Open Source Chip Research Institute (BOSC)  
+🏢 Engineer @ BOSC  
 
 🔬 **Research:** AI for Compiler · Compiler Optimization · Code Optimization  
 📄 **CV:** [yangzi.world/resume/index.html](https://yangzi.world/resume/index.html)  
