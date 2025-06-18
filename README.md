@@ -1,14 +1,12 @@
-👋 Hi, I’m **Yangzi**  
 🎓 Graduate Student, Jiangnan University  
-🤝 Co-trained at the Institute of Computing Technology, CAS  
-🏢 Engineer @ BOSC  
+🤝 Co-trained at the Institute of Computing Technology, Chinese Academy of Sciences  
+🏢 Intern @ Beijing Institute of Open Source Chip
 
-🔬 **Research:** AI for Compiler · Compiler Optimization · Code Optimization  
-📄 **CV:** [yangzi.world/resume/index.html](https://yangzi.world/resume/index.html)  
+🔬 **Research:** AI for Compilers · Compiler Optimization · Code Optimization  
 📝 **Blog (CN):** [yangzi.world/blog/index.html](https://yangzi.world/blog/index.html)  
 
 💡 **Interests:** Traditional Chinese Medicine · Buddhism · Poetry · Traveling  
-📚 Passionate about learning everything!  
+📚 Passionate about learning everything! Studying 100+ hours every week 🤗  
 🧠 **Personality:** ENFJ-A (“The Protagonist”)  
 
 ✉️ yangzi.research@outlook.com  
