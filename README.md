@@ -1,70 +1,68 @@
-<!-- 置中标题 + 招手动图（可换成你自己的 GIF） -->
-<h1 align="center">Hi, I'm Yangzi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="28"/></h1>
+<h2 align="center">Hi, I'm Yilingqinghan (逸翎清晗) <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="28"/> <img width="30" height="30" src="https://www.16personalities.com/static/images/personality-types/avatars/enfj-protagonist-male.svg?v=3"></h2>
+
 <p align="center">
-  🎓 Graduate Student @ Jiangnan University · 🤝 Co-trained @ ICT, CAS · 🏢 Intern @ Beijing Institute of Open Source Chip
+  🎓 Graduate Student · Co-trained @ ICT, CAS · 🏢 Intern @ Beijing Institute of Open Source Chip
 </p>
 
-<!-- 打字机动态标题（关键词可自行改） -->
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=540&lines=AI4Compiler+%7C+APR+%7C+Code+Optimization;PIM%2FCIM+Compilation+%7C+ML+Compiler;Always+learning+100%2B+hours+%2F+week+🤗" />
+  <a href="mailto:yangzi.research@outlook.com"><img alt="Email" src="https://img.shields.io/badge/Email-0A66C2?logo=microsoftoutlook&logoColor=white&style=flat-square"></a>
+  <a href="https://yangzi.world/blog/index.html"><img alt="Blog" src="https://img.shields.io/badge/Blog-1f6feb?logo=firefoxbrowser&logoColor=white&style=flat-square"></a>
+  <img alt="Profile Views" src="https://komarev.com/ghpvc/?username=yilingqinghan&style=flat-square&color=1f6feb">
+  <a href="https://github.com/yilingqinghan?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/yilingqinghan?style=flat-square&color=1f6feb"></a>
+  <a href="https://github.com/yilingqinghan?tab=repositories"><img alt="Stars" src="https://img.shields.io/github/stars/yilingqinghan?affiliations=OWNER%2CCOLLABORATOR&style=flat-square&color=1f6feb"></a>
 </p>
 
-<!-- 社交/联系徽章：按需增减 -->
-<p align="center">
-  <a href="mailto:yangzi.research@outlook.com"><img alt="Email" src="https://img.shields.io/badge/Email-0078D4?logo=microsoft-outlook&logoColor=white"></a>
-  <a href="https://yangzi.world/blog/index.html"><img alt="Blog" src="https://img.shields.io/badge/Blog-yangzi.world-1f425f?logo=firefox-browser&logoColor=white"></a>
-  <img alt="Profile Views" src="https://komarev.com/ghpvc/?username=<YOUR-GITHUB-USERNAME>&style=flat&color=blue">
-  <a href="https://github.com/<YOUR-GITHUB-USERNAME>?tab=followers"><img alt="Followers" src="https://img.shields.io/github/followers/<YOUR-GITHUB-USERNAME>?style=flat"></a>
-  <a href="https://github.com/<YOUR-GITHUB-USERNAME>?tab=repositories"><img alt="Stars" src="https://img.shields.io/github/stars/<YOUR-GITHUB-USERNAME>?affiliations=OWNER%2CCOLLABORATOR"></a>
-</p>
+##### 👨‍🔬 Research
+- **AI4Compiler**, **APR**, **Code Optimization**, **Binary**, **ML Compiler**
 
----
+##### ✨ Interests
+Medicine · Design · Poetry · Traveling · Social → MBTI: ENFJ-A (“The Protagonist”)
 
-### 👨‍🔬 Research
-- **AI4Compiler**, **Automatic Program Repair (APR)**  
-- **Code Optimization**, **PIM/CIM Compilation**, **ML Compiler**
 
-### ✨ Interests
-Traditional Chinese Medicine · Buddhism · Poetry · Traveling
 
-### 🧠 Personality
-ENFJ-A (“The Protagonist”)
+##### 🛠 Tech Stack (compact badges, blue/white)
 
----
-
-## 🧰 Tech Stack (selected)
-<!-- skill icons：按需增删，参考 https://simpleicons.org 或 https://skillicons.dev -->
+<!-- 工具/框架（按你的要求，小尺寸 flat-square，尽量使用官方 logo；没有就用文字徽章） -->
 <p>
-  <img src="https://skillicons.dev/icons?i=python,cpp,clang,cmake,git,github,linux,ubuntu,docker,regex,pytorch,tensorflow,vscode" />
+  <!-- 编译/工具链 -->
+  <img src="https://img.shields.io/badge/LLVM-262D3A?logo=llvm&logoColor=white&style=flat-square" alt="LLVM"/>
+  <img src="https://img.shields.io/badge/GCC-1f6feb?style=flat-square" alt="GCC"/>
+  <img src="https://img.shields.io/badge/GDB-1f6feb?style=flat-square" alt="GDB"/>
+  <img src="https://img.shields.io/badge/MLIR-1f6feb?style=flat-square" alt="MLIR"/>
+  <img src="https://img.shields.io/badge/GHC-1f6feb?style=flat-square" alt="GHC"/>
+  <img src="https://img.shields.io/badge/Git-0A66C2?logo=git&logoColor=white&style=flat-square" alt="Git"/>
+  <img src="https://img.shields.io/badge/React-0A66C2?logo=react&logoColor=white&style=flat-square" alt="React"/>
+  <img src="https://img.shields.io/badge/Hadoop-0A66C2?logo=apachehadoop&logoColor=white&style=flat-square" alt="Hadoop"/>
+  <img src="https://img.shields.io/badge/CMake-0A66C2?logo=cmake&logoColor=white&style=flat-square" alt="CMake"/>
+  <img src="https://img.shields.io/badge/Linux-0A66C2?logo=linux&logoColor=white&style=flat-square" alt="Linux"/>
+  <img src="https://img.shields.io/badge/Docker-0A66C2?logo=docker&logoColor=white&style=flat-square" alt="Docker"/>
+  <img src="https://img.shields.io/badge/RISC--V-1f6feb?logo=riscv&logoColor=white&style=flat-square" alt="RISC-V"/>
+  <img src="https://img.shields.io/badge/x86-1f6feb?style=flat-square" alt="x86"/>
+  <img src="https://img.shields.io/badge/ARM-0A66C2?logo=arm&logoColor=white&style=flat-square" alt="ARM"/>
 </p>
 
----
-
-## 📊 GitHub Stats
-<!-- 主题可换：radical, merko, tokyonight, gruvbox, etc. -->
+<!-- 语言 -->
 <p>
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=<YOUR-GITHUB-USERNAME>&show_icons=true&theme=tokyonight&hide_title=true" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=<YOUR-GITHUB-USERNAME>&layout=compact&theme=tokyonight" />
+  <img src="https://img.shields.io/badge/C-1f6feb?logo=c&logoColor=white&style=flat-square" alt="C"/>
+  <img src="https://img.shields.io/badge/C%2B%2B-1f6feb?logo=cplusplus&logoColor=white&style=flat-square" alt="C++"/>
+  <img src="https://img.shields.io/badge/Python-1f6feb?logo=python&logoColor=white&style=flat-square" alt="Python"/>
+  <img src="https://img.shields.io/badge/Scala-1f6feb?logo=scala&logoColor=white&style=flat-square" alt="Scala"/>
+  <img src="https://img.shields.io/badge/Shell-1f6feb?logo=gnubash&logoColor=white&style=flat-square" alt="Shell"/>
+  <img src="https://img.shields.io/badge/Haskell-1f6feb?logo=haskell&logoColor=white&style=flat-square" alt="Haskell"/>
+  <img src="https://img.shields.io/badge/JavaScript-1f6feb?logo=javascript&logoColor=white&style=flat-square" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/Triton-1f6feb?style=flat-square" alt="Triton"/>
 </p>
+
+
+
+##### 📊 GitHub Stats (cold blue theme)
+
+<!-- 通过自定义色值把主题统一成冷色（透明背景 + 蓝白），避免 tokyo night -->
 <p>
-  <img src="https://streak-stats.demolab.com?user=<YOUR-GITHUB-USERNAME>&theme=tokyonight" />
-</p>
-
----
-
-## 📝 Latest Blog Posts
-<!-- 下面一段会由 GitHub Actions 自动更新（在“三、可选进阶”里打开自动化） -->
-<!-- BLOG-POST-LIST:START -->
-- *(auto update here)* 
-<!-- BLOG-POST-LIST:END -->
-
----
-
-## 📬 Contact
-- ✉️ yangzi.research@outlook.com  
-- 📝 Blog (CN): https://yangzi.world/blog/index.html
-
-<!-- 装饰性的波浪分割线，可换本地图或删掉 -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&height=120&color=0:4b6cb7,100:182848&section=footer" />
+  <img height="137" alt="stats"
+       src="https://github-readme-stats.vercel.app/api?username=yilingqinghan&show_icons=true&hide_title=true&hide_border=true&bg_color=00000000&title_color=0A66C2&text_color=1f6feb&icon_color=58a6ff" />
+  <img height="137" alt="top langs"
+       src="https://github-readme-stats.vercel.app/api/top-langs/?username=yilingqinghan&layout=compact&hide_border=true&bg_color=00000000&title_color=0A66C2&text_color=1f6feb" />
+  <img height="137" alt="streak"
+       src="https://streak-stats.demolab.com?user=yilingqinghan&hide_border=true&background=FFFFFF00&ring=0A66C2&fire=1f6feb&currStreakLabel=0A66C2&sideNums=1f6feb&sideLabels=0A66C2&dates=1f6feb"/>
 </p>
