@@ -12,13 +12,13 @@
   <a href="https://github.com/yilingqinghan?tab=repositories"><img alt="Stars" src="https://img.shields.io/github/stars/yilingqinghan?affiliations=OWNER%2CCOLLABORATOR&style=flat-square&color=1f6feb"></a>
 </p>
 
-##### 👨‍🔬 Research
+##### Research
 - **AI4Compiler**, **APR**, **Code/Compiler Optimization**, **Binary**, **ML Compiler**
 
 ##### ✨ Interests
 Medicine · Design · Poetry · Traveling · Social → MBTI: ENFJ-A (“The Protagonist”)
 
-##### 🛠 Tech Stack (compact badges, blue/white)
+##### 🛠 Tech Stack
 
 <!-- 工具/框架（按你的要求，小尺寸 flat-square，尽量使用官方 logo；没有就用文字徽章） -->
 <p>
@@ -53,7 +53,7 @@ Medicine · Design · Poetry · Traveling · Social → MBTI: ENFJ-A (“The Pro
 
 
 
-##### 📊 GitHub Stats (cold blue theme)
+##### Stats
 
 <!-- 通过自定义色值把主题统一成冷色（透明背景 + 蓝白），避免 tokyo night -->
 <p>
