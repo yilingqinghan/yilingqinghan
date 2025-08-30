@@ -57,11 +57,11 @@ Medicine · Design · Poetry · Traveling · Social → MBTI: ENFJ-A (“The Pro
 
 <!-- 通过自定义色值把主题统一成冷色（透明背景 + 蓝白），避免 tokyo night -->
 <p>
-  <img height="100" alt="stats"
+  <img height="110" alt="stats"
        src="https://github-readme-stats.vercel.app/api?username=yilingqinghan&show_icons=true&hide_title=true&hide_border=true&bg_color=00000000&title_color=0A66C2&text_color=1f6feb&icon_color=58a6ff" />
-  <img height="100" alt="top langs"
+  <img height="110" alt="top langs"
        src="https://github-readme-stats.vercel.app/api/top-langs/?username=yilingqinghan&layout=compact&hide_border=true&bg_color=00000000&title_color=0A66C2&text_color=1f6feb" />
-  <img height="100" alt="streak"
+  <img height="110" alt="streak"
        src="https://streak-stats.demolab.com?user=yilingqinghan&hide_border=true&background=FFFFFF00&ring=0A66C2&fire=1f6feb&currStreakLabel=0A66C2&sideNums=1f6feb&sideLabels=0A66C2&dates=1f6feb"/>
 </p>
 <div align="center">
