@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clean Academic</title>
+  <meta name="description" content="A clean, elegant, Markdown-driven academic website." />
+  <link rel="icon" href="assets/favicon.svg">
+  <style>
+    /* Tailored minimal design: elegant, airy, accessible */
+    :root{
+      --bg: #ffffff;
+      --fg: #0f172a;           /* slate-900 */
+      --muted: #475569;        /* slate-600 */
+      --soft: #e2e8f0;         /* slate-200 */
+      --card: #f8fafc;         /* slate-50 */
+      --accent: #0ea5e9;       /* sky-500 */
+      --accent-weak:#bae6fd;   /* sky-200 */
+      --shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+    }
+    [data-theme="dark"]{
+      --bg: #0b1020;
+      --fg: #e5e7eb;           /* zinc-200 */
+      --muted: #a1a1aa;        /* zinc-400 */
+      --soft: #1f2937;         /* gray-800 */
+      --card: #111827;
+      --accent: #38bdf8;       /* sky-400 */
+      --accent-weak:#0c4a6e;   /* sky-900 */
+      --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin:0;
+      color:var(--fg);
+      background: radial-gradient(1200px 600px at 10% -10%, var(--accent-weak) 0%, transparent 40%) , var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Inter", "SF Pro Text",
+                   "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+                   "Noto Sans CJK SC", "Helvetica Neue", Arial, "Segoe UI", sans-serif;
+      line-height:1.7;
+      letter-spacing: .2px;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a{ color: var(--accent); text-underline-offset: 3px; }
+    a:hover{ text-decoration-thickness: 2px; }
+
+    .container{
+      width:min(100%, 980px);
+      margin:0 auto;
+      padding: 24px 20px 80px;
+    }
+
+    header.nav{
+      position: sticky; top:0; z-index:20;
+      backdrop-filter: saturate(140%) blur(8px);
+      background: color-mix(in oklab, var(--bg), transparent 40%);
+      border-bottom: 1px solid var(--soft);
+    }
+    .nav-inner{
+      display:flex; align-items:center; gap:14px;
+      width:min(100%, 1100px); margin:0 auto;
+      padding: 12px 20px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      font-weight:700; letter-spacing:.3px;
+    }
+    .brand .avatar{ width:32px; height:32px; border-radius:50%; box-shadow: var(--shadow); }
+    .spacer{ flex:1; }
+    .menu{ display:flex; gap:14px; flex-wrap:wrap; }
+    .menu a{
+      display:inline-block; padding:8px 12px;
+      border-radius:14px; background:transparent; color:var(--fg);
+      text-decoration:none; border:1px solid transparent; transition:.25s ease;
+    }
+    .menu a.active, .menu a:hover{ background:var(--card); border-color:var(--soft); transform: translateY(-1px); }
+
+    .toggles{ display:flex; align-items:center; gap:8px; }
+    .toggle{
+      border:1px solid var(--soft); background:var(--card);
+      padding:6px 10px; border-radius:12px; cursor:pointer; transition:.2s ease;
+    }
+    .toggle:hover{ transform: translateY(-1px); }
+
+    main{
+      width:min(100%, 980px); margin: 28px auto 0; padding: 0 20px 60px;
+    }
+    .hero{
+      display:grid; grid-template-columns: 1fr;
+      gap:16px; padding: 28px; border-radius:24px;
+      background: linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 10%), transparent);
+      border:1px solid var(--soft);
+      box-shadow: var(--shadow);
+      animation: fadeIn .5s ease both;
+    }
+    @media (min-width: 860px){
+      .hero{ grid-template-columns: 2.2fr 1fr; align-items:center; }
+    }
+    .hero h1{
+      font-size: clamp(28px, 3.6vw, 40px);
+      font-weight: 800;
+      margin: 0 0 8px 0;
+      letter-spacing:.2px;
+    }
+    .hero p.lead{
+      font-size: clamp(16px, 1.8vw, 18px);
+      color:var(--muted);
+      margin: 4px 0 14px 0;
+    }
+    .hero .hero-avatar{
+      width: 140px; height: 140px; border-radius: 24px;
+      border: 1px solid var(--soft); background: var(--card);
+      padding:10px; margin-left:auto; display:block;
+      box-shadow: var(--shadow);
+      transition: transform .5s ease;
+    }
+    .hero .hero-avatar:hover{ transform: rotate(2deg) scale(1.02); }
+
+    .card{
+      background: var(--card);
+      border:1px solid var(--soft);
+      box-shadow: var(--shadow);
+      border-radius: 22px; padding: 22px;
+      margin: 18px 0; animation: floatIn .5s ease both;
+    }
+    .card h2{ margin-top: 4px; }
+    .muted{ color: var(--muted); }
+
+    /* Prose styles */
+    .prose :where(h1,h2,h3){ line-height:1.25; margin: 26px 0 10px; }
+    .prose h2{ font-size: 22px; }
+    .prose h3{ font-size: 18px; }
+    .prose p{ margin: 12px 0; }
+    .prose ul, .prose ol{ margin: 10px 0 12px 22px; }
+    .prose li{ margin:6px 0; }
+    .prose blockquote{
+      border-left: 3px solid var(--accent);
+      padding-left: 12px; color: var(--muted);
+      margin: 10px 0; font-style: italic;
+    }
+    .prose code{
+      background: rgba(2, 6, 23, .07);
+      padding: .2em .4em; border-radius: 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: .95em;
+    }
+    .prose pre{
+      background: #0b1020; color: #e5e7eb;
+      border-radius: 14px; overflow:auto;
+      padding: 16px; border:1px solid #111827;
+    }
+    .prose table{ width:100%; border-collapse: collapse; margin: 14px 0; }
+    .prose th, .prose td{ border:1px solid var(--soft); padding:8px 10px; text-align:left; }
+    .prose hr{ border:0; height:1px; background: var(--soft); margin: 18px 0; }
+    .kbd{ border:1px solid var(--soft); background: var(--card); padding:.2em .5em; border-radius:8px; }
+
+    footer{
+      text-align:center; color:var(--muted); padding: 38px 0 60px;
+    }
+
+    .float-btn{
+      position: fixed; right: 18px; bottom: 18px; z-index: 30;
+      padding: 10px 12px; border-radius: 14px; border:1px solid var(--soft);
+      background: var(--card); box-shadow: var(--shadow); cursor:pointer;
+      transition:.25s ease; display:none;
+    }
+    .float-btn.show{ display:block; }
+    .float-btn:hover{ transform: translateY(-2px); }
+
+    /* Animations */
+    @keyframes fadeIn{ from{ opacity:0; transform: translateY(6px);} to{ opacity:1; transform:none;} }
+    @keyframes floatIn{ from{ opacity:0; transform: translateY(12px);} to{ opacity:1; transform:none;} }
+
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      *{ animation:none !important; transition:none !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav" role="navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#/home" aria-label="Home">
+        <img class="avatar" src="assets/avatar.svg" alt="avatar" />
+        <span id="brand-name">Your Name</span>
+      </a>
+      <div class="spacer"></div>
+      <nav class="menu" id="menu"></nav>
+      <div class="toggles">
+        <button id="themeToggle" class="toggle" aria-label="切换主题">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="app" class="container">
+    <section class="hero">
+      <div>
+        <h1 id="hero-title">Your Name</h1>
+        <p class="lead" id="hero-tagline">Researcher • Field • Institution</p>
+        <div id="hero-links"></div>
+      </div>
+      <img class="hero-avatar" src="assets/avatar.svg" alt="portrait" />
+    </section>
+
+    <section class="card prose" id="content" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div id="footer"></div>
+  </footer>
+
+  <button class="float-btn" id="scrollTop" aria-label="返回顶部">↑</button>
+
+  <script type="module" src="assets/app.js"></script>
+</body>
+</html>

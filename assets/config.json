@@ -1,0 +1,45 @@
+{
+  "name": "张三",
+  "tagline": "计算机视觉 / 机器学习 · 某某大学",
+  "avatar": "assets/avatar.svg",
+  "theme": "light",
+  "links": [
+    {
+      "title": "Google Scholar",
+      "href": "https://scholar.google.com/",
+      "icon": "📚"
+    },
+    {
+      "title": "GitHub",
+      "href": "https://github.com/",
+      "icon": "💻"
+    },
+    {
+      "title": "Email",
+      "href": "mailto:you@example.com",
+      "icon": "✉️"
+    }
+  ],
+  "sections": [
+    {
+      "id": "home",
+      "title": "主页",
+      "md": "home.md"
+    },
+    {
+      "id": "publications",
+      "title": "论文",
+      "md": "publications.md"
+    },
+    {
+      "id": "projects",
+      "title": "项目",
+      "md": "projects.md"
+    },
+    {
+      "id": "teaching",
+      "title": "教学",
+      "md": "teaching.md"
+    }
+  ]
+}
