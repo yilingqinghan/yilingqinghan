@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link rel="icon" href="assets/avatar.svg" />
+  <style>
+    :root{
+      --fg:#1a1a1a; --muted:#616161; --hair:#e9e9e9; --bg:#ffffff; --card:#ffffff;
+      --green:#2f855a; --green-weak:#e6f3ec; --blue:#0e6fff;
+      --radius:14px; --shadow:0 10px 30px rgba(0,0,0,.06);
+      --font: "Futura","Avenir Next","Avenir","Helvetica Neue",Arial,"Segoe UI",system-ui,sans-serif;
+      --font-cn: "Charter","Noto Serif SC","Songti SC","SimSun",serif;
+      --size:16.5px; --line:1.72; --maxw: 1100px;
+    }
+    body{ margin:0; color:var(--fg); background:#f7f7f7; font-size:var(--size); line-height:var(--line);
+      font-family: var(--font);
+    }
+    :lang(zh), :lang(zh-CN){ font-family: var(--font-cn); }
+    .wrap{ width:min(100%,var(--maxw)); margin: 24px auto 60px; padding: 0 16px; }
+    .topbar{ display:flex; justify-content:flex-end; gap:8px; margin: 10px 0; }
+    .pill{ border:1px solid var(--hair); background:#fff; padding:6px 12px; border-radius:999px; cursor:pointer; }
+    .pill:hover{ box-shadow: var(--shadow); transform: translateY(-1px); }
+    .sheet{ background:#fff; border:1px solid var(--hair); border-radius: 16px; box-shadow: var(--shadow); padding: 24px; }
+    .header{ display:grid; grid-template-columns: 1fr 260px; gap:18px; align-items:center; border-bottom:1px solid var(--hair); padding-bottom:16px; }
+    .name{ font-size: clamp(34px, 4.5vw, 48px); font-weight:900; letter-spacing:.3px; color:#1a1a1a; }
+    .title{ color: var(--muted); margin-top:4px; }
+    .photo{ width: 150px; height: 150px; border-radius: 14px; border:1px solid var(--hair); object-fit: cover; justify-self:end; background:#fafafa; }
+    .summary{ color: var(--muted); margin-top: 10px; }
+
+    .content{ display:grid; grid-template-columns: 2fr 1fr; column-gap: 20px; margin-top: 16px; }
+    .h2{ font-size: 18px; font-weight:800; letter-spacing:.2px; margin: 22px 0 10px; color:#1a1a1a; }
+    .h2 .bar{ display:inline-block; width:12px; height:14px; background: var(--green); border-radius: 2px; margin-right:10px; vertical-align:-2px; }
+    .entry{ margin-bottom: 12px; }
+    .entry .role{ font-weight:700; }
+    .entry .org{ color:var(--muted); }
+    .entry .time{ color:var(--muted); float:right; }
+    .bullets{ margin:6px 0 0 18px; }
+
+    .tags{ display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+    .tag{ padding:2px 8px; border:1px solid var(--hair); border-radius:999px; background:#fff; font-size:12px; }
+    .bar{ height:8px; border-radius:999px; background:#f0f0f0; margin-top:6px; position:relative; overflow:hidden; }
+    .bar > span{ position:absolute; left:0; top:0; bottom:0; width:0; background:linear-gradient(90deg, var(--green), #73c09b); border-radius:999px; }
+
+    .contact a{ color: var(--fg); text-decoration: none; }
+    .contact li{ list-style:none; display:flex; align-items:center; gap:8px; padding:4px 0; color:var(--muted); }
+    .icon{ width:16px; height:16px; display:inline-block; }
+
+    @media print{
+      body{ background:#fff; }
+      .topbar{ display:none; }
+      .wrap{ margin: 0; width: 100%; }
+      .sheet{ border:0; box-shadow: none; border-radius:0; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div id="svg-sprite" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="topbar">
+      <button class="pill" id="langBtn">English</button>
+      <button class="pill" id="pdfBtn">Download PDF</button>
+    </div>
+    <div class="sheet">
+      <div class="header">
+        <div>
+          <div class="name" id="name">Your Name</div>
+          <div class="title" id="title">Your Title</div>
+          <p class="summary" id="summary"></p>
+        </div>
+        <img class="photo" id="photo" src="assets/avatar.svg" alt="portrait"/>
+      </div>
+
+      <div class="content">
+        <div>
+          <div class="h2"><span class="bar"></span><span id="expTitle">Internship Experiences</span></div>
+          <div id="experiences"></div>
+
+          <div class="h2"><span class="bar"></span><span id="projTitle">Projects</span></div>
+          <div id="projects"></div>
+
+          <div class="h2"><span class="bar"></span><span id="paperTitle">Papers</span></div>
+          <div id="papers"></div>
+        </div>
+        <aside>
+          <div class="h2"><span class="bar"></span><span id="skillsTitle">Skills</span></div>
+          <div id="skills"></div>
+
+          <div class="h2"><span class="bar"></span><span id="eduTitle">Education</span></div>
+          <div id="education"></div>
+
+          <div class="h2"><span class="bar"></span><span id="contactTitle">Contact</span></div>
+          <ul id="contacts" class="contact"></ul>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="assets/resume.js"></script>
+</body>
+</html>
