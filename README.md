@@ -1,5 +1,7 @@
 <h2 align="center">Hi, I'm Yilingqinghan (逸翎清晗) <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="28"/> <img width="30" height="30" src="https://www.16personalities.com/static/images/personality-types/avatars/enfj-protagonist-male.svg?v=3"></h2>
 
+CV: https://yilingqinghan.github.io/yilingqinghan/
+
 <p align="center">
   🎓 Graduate Student · Co-trained @ ICT, CAS · 🏢 Intern @ Beijing Institute of Open Source Chip
 </p>
