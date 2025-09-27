@@ -1,0 +1,71 @@
+/* assets/css/cv-drawer.scss  —— 可靠的右侧抽屉 + 覆盖层 + 把手 */
+
+:root {
+  --cv-width: min(960px, 90vw); /* 抽屉宽度：优先 960px，最多 90vw */
+  --cv-peek: 22px;              /* 露出把手的宽度 */
+  --cv-ease: cubic-bezier(.22,.61,.36,1);
+  --cv-z-tab: 10000;
+  --cv-z-drawer: 9999;
+  --cv-z-overlay: 9998;
+}
+
+/* 关掉横向溢出，避免能拖到屏外看到抽屉本体 */
+html, body { height: 100%; overflow-x: hidden; }
+
+/* 覆盖层：固定、铺满、不留缝 */
+#cv-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.45);
+  backdrop-filter: blur(2px);
+  opacity: 0; pointer-events: none;
+  transition: opacity .25s var(--cv-ease);
+  z-index: var(--cv-z-overlay);
+}
+#cv-overlay.is-active { opacity: 1; pointer-events: auto; }
+
+/* 抽屉：永远 right:0，用 transform 推到屏外，仅露把手 */
+#cv-drawer {
+  position: fixed;
+  top: 0; right: 0;
+  width: var(--cv-width);
+  height: 100vh;
+  background: #fff;
+  box-shadow: -24px 0 48px rgba(0,0,0,.12);
+  transform: translateX(calc(100% - var(--cv-peek)));
+  transition: transform .45s var(--cv-ease);
+  z-index: var(--cv-z-drawer);
+  will-change: transform;
+  overflow-y: auto; /* CV 内容可滚动 */
+  -webkit-overflow-scrolling: touch;
+}
+#cv-drawer.is-open { transform: translateX(0); }
+
+/* 右侧“CV”把手：贴边固定。打开后隐藏，避免挡住抽屉边缘 */
+.cv-tab,
+#cvTab {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  z-index: var(--cv-z-tab);
+  background: #15a3ff;
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 8px 0 0 8px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  box-shadow: 0 6px 18px rgba(21,163,255,.35);
+  cursor: pointer;
+  user-select: none;
+}
+.cv-open .cv-tab,
+.cv-open #cvTab { display: none; }
+
+/* 打开时锁滚就靠 JS；这里兜底一下 */
+.cv-open { overflow: hidden; }
+
+/* 去掉 Minimal Mistakes 的“汉堡按钮” */
+.greedy-nav__toggle { display: none !important; }
+
+/* 全站取消页脚（你说任何页面都不想要） */
+.page__footer, .page__footer-follow { display: none !important; }
+
