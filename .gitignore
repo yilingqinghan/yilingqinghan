@@ -6,3 +6,24 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+# Python/AI 常见
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+.DS_Store
+
+# 训练/数据
+data/
+datasets/
+checkpoints/
+outputs/
+runs/      # TensorBoard/Lightning
+wandb/
+
+# 构建产物
+build/
+dist/
+node_modules/
+
