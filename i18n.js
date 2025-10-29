@@ -58,7 +58,8 @@ const resources = {
                     "<div class=\"text-muted mb-1\">Ranked 1st in Comprehensive Evaluation (1/72)</div>\n" +
                     "<div class=\"text-muted mb-1\">First-Class Academic Scholarship (Top 5%)</div>\n" +
                     "<div class=\"text-muted mb-1\">Outstanding Graduate Student Leader (22 awardees in the school)</div>\n" +
-                    "<div class=\"text-muted\">Xiaomi Scholarship Recipient (11 awardees in the school)</div>\n" +
+                    "<div class=\"text-muted\">2023~2024 Xiaomi Scholarship Recipient (11 awardees in the school)</div>\n" +
+                    "<div class=\"text-muted\">2024~2025 Xiaomi Scholarship Recipient (11 awardees in the school)</div>\n" +
                     "</li>",
                 "lang": "Languages",
                 "langs": "<li class=\"mb-1\">Chinese <span class=\"text-muted\">(Native)</span></li>\n" +
@@ -141,6 +142,7 @@ const resources = {
                     "<div class=\"text-muted mb-1\">2023-2024学年一等学业奖学金(前5%)</div>\n" +
                     "<div class=\"text-muted mb-1\">2023-2024学年优秀研究生干部(院22人获奖)</div>\n" +
                     "<div class=\"text-muted\">2023-2024学年“小米奖学金”(院11人获奖)</div>\n" +
+                    "<div class=\"text-muted\">2024-2025学年“小米奖学金”(院11人获奖)</div>\n" +
                     "</li>",
                 "lang":
                     "语言",
