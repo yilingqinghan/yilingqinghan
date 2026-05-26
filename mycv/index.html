@@ -240,6 +240,13 @@
             display: none !important;
         }
 
+        #papers-body .paper-authors {
+            display: block;
+            margin-top: 4px;
+            font-size: 0.9rem;
+            line-height: 1.35;
+        }
+
         /* Cancel all bold globally */
         b, strong, .fw-bold, .font-weight-bold,
         .resume-section-heading, .item-title,
@@ -691,6 +698,10 @@
                                             <span class="conf-title"><span lang="en">NeurIPS 2025 · San Diego, USA</span><span lang="zh">NeurIPS 2025 · 美国圣迭戈</span></span>
                                             <span class="conf-date">2025‑12</span>
                                         </li>
+                                        <li>
+                                            <span class="conf-title"><span lang="en">ICML 2026 · Seoul, South Korea</span><span lang="zh">ICML 2026 · 韩国首尔</span></span>
+                                            <span class="conf-date">2026‑07</span>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
@@ -703,10 +714,29 @@
                                     <li>
                                         <span class="tag"><span lang="zh">一作</span><span lang="en">First author</span></span>
                                         <span class="tag muted">CCF‑A</span>
+                                        <strong>CIRBench: Evaluating Large Language Models as LLVM IR Optimizers</strong>.
+                                        <em>ICML 2026</em>.
+                                        <a href="https://icml.cc/virtual/2026/poster/65497" target="_blank"
+                                           rel="noopener">ICML Poster</a>
+                                        <div class="paper-authors text-muted">Zi Yang, Haifeng Ding, Fei Liu, Yingying Cheng, Han Cheng, Zhilei Chai, Haojie Zhou</div>
+                                        <div class="paper-extra">
+                                            <br>
+                                            <span class="text-muted">Zi Yang, Haifeng Ding, Fei Liu, Yingying Cheng, Han Cheng, Zhilei Chai, Haojie Zhou</span><br>
+                                            <span class="text-muted">
+									    <span lang="en">Summary:</span><span lang="zh">摘要：</span>
+									    <span lang="en">evaluates LLMs as LLVM IR optimizers across analysis, repair, refactor, and performance-oriented transform tasks.</span>
+									    <span lang="zh">从分析、修复、重构和性能导向变换四类任务评估 LLM 作为 LLVM IR 优化器的能力。</span>
+									  </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="tag"><span lang="zh">一作</span><span lang="en">First author</span></span>
+                                        <span class="tag muted">CCF‑A</span>
                                         <strong>IR-OptSet: An Optimization-Sensitive Dataset for Advancing LLM-Based IR Optimizer</strong>.
                                         <em>NeurIPS 2025</em>.
                                         <a href="https://openreview.net/forum?id=U8qonc6dMF" target="_blank"
                                            rel="noopener">OpenReview</a>
+                                        <div class="paper-authors text-muted">Zi Yang*, Lei Qiu*, Fang Lyu*, Ming Zhong*, Zhilei Chai*, Haojie Zhou*, Huimin Cui*, Xiaobing Feng</div>
                                         <div class="paper-extra">
                                             <br>
                                             <span class="text-muted">Zi Yang*, Lei Qiu*, FANG LYU*, Ming Zhong*, Zhilei Chai*, Haojie Zhou*, Huimin Cui*, Xiaobing Feng</span><br>
@@ -1295,10 +1325,12 @@
         qAll('#papers-body li').forEach(li => {
             const title = extractVisibleText('strong', li);
             const venue = extractVisibleText('em', li);
+            const authors = extractVisibleText('.paper-authors', li);
             const a = li.querySelector('a');
             const link = a ? a.href : '';
             let lineTxt = [title, venue].filter(Boolean).join(' · ');
             text(lineTxt || (isZh ? '（暂无）' : '(none)'));
+            if (authors) text(authors, {size: 10, color: 100, indent: 14});
             if (link) text(link, {size: 10, color: 110, indent: 14});
         });
         y += 4;
@@ -1461,8 +1493,9 @@
         all('#papers-body li').forEach(li => {
             const t = get('strong', li);
             const v = get('em', li);
+            const authors = get('.paper-authors', li);
             const a = li.querySelector('a');
-            html += `<li>${esc([t, v].filter(Boolean).join(' · '))}${a ? ` — ${esc(a.href)}` : ''}</li>`;
+            html += `<li>${esc([t, v].filter(Boolean).join(' · '))}${authors ? `<br><span class="muted">${esc(authors)}</span>` : ''}${a ? `<br><span class="muted">${esc(a.href)}</span>` : ''}</li>`;
         });
         html += `</ul></div>`;
 
