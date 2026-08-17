@@ -41,6 +41,12 @@ var store = [{
         "url": "/yilingqinghan/talks/bisheng-experience-sharing/",
         "teaser": null
       },{
+        "title": "Huawei Bisheng Cup Experience Sharing — 2026",
+        "excerpt":"Recording  ","categories": [],
+        "tags": [],
+        "url": "/yilingqinghan/talks/bisheng-experience-sharing-2026/",
+        "teaser": null
+      },{
         "title": "Teaching experience 1",
         "excerpt":"This is a description of a teaching experience. You can use markdown like any other post.   Heading 1   Heading 2   Heading 3  ","categories": [],
         "tags": [],
